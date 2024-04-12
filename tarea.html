@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/dark.css">
+</head>
+
+<body>
+    <div id="ta2_69" class="block iDevice_content">
+        <h4 class="resaltado_inline" style="text-align: left;">ACTIVIDAD 1. Gestión del DOM y navegación entre
+            nodos<strong></strong></h4>
+        <p dir="ltr"><span>Implementa en HTML una página Web que contenga&nbsp;tres inputs (nombre, apellido y edad) y
+                un botón de añadir. Además, debe contener una tabla con los mismos
+                encabezados.&nbsp;&nbsp;</span><span>Al pulsar el botón de añadir, se debe añadir una nueva fila a una
+                tabla.</span></p>
+        <ul>
+            <li dir="ltr"><span>El <strong>botón de añadir</strong> añadirá al final de la tabla una nueva fila con los
+                    datos que contuvieran sus inputs. Posteriormente, se debe borrar el contenido de los inputs.</span>
+            </li>
+            <li dir="ltr"><span>El botón solamente estará activo si se ha introducido un valor valido en los tres
+                    inputs. También se desactivará si&nbsp;se está editando una fila.</span></li>
+            <li dir="ltr"><span>Estas filas deben añadirse utilizando el sistema de nodos.</span></li>
+        </ul>
+        <p dir="ltr"><span>Adicionalmente, cada fila de la tabla debe contar con botones para las siguientes
+                operaciones:&nbsp;</span><span>Editar, Aceptar, Eliminar, Subir y Bajar.&nbsp; Estos botones deben ser
+                enlazados con funciones (eventos) cuando son insertados en la tabla. En concreto, las acciones a añadir
+                son:</span></p>
+        <ul>
+            <li dir="ltr"><span>Si se pulsa el <strong>botón de editar</strong> de una fila, los párrafos que contienen
+                    sus datos se convertirán en inputs.<br></span></li>
+            <li dir="ltr"><span>Solo se deberá poder editar una fila simultáneamente.<br></span></li>
+            <li dir="ltr"><span>Si se pulsa el <strong>botón de aceptar</strong> (solo disponible si en una columna se
+                    ha pulsado anteriormente el botón de enviar), se convertirán los inputs de nuevo en párrafos con los
+                    valores actuales.<br></span></li>
+            <li dir="ltr"><span>Si se pulsa el <strong>botón de borrar</strong> se eliminará su fila
+                    correspondiente.<br></span></li>
+            <li dir="ltr"><span>Si se pulsa el <strong>botón de subir</strong>&nbsp;se sube la fila actual a la fila
+                    superior. No debe poder utilizarse en la primera fila.<br></span></li>
+            <li dir="ltr"><span>Si se pulsa el <strong>botón de bajar</strong>&nbsp;se baja la fila actual a la fila
+                    inferior. No debe poder utilizarse en la última fila.</span></li>
+        </ul>
+        <p dir="ltr"><span><img
+                    src="https://www.juntadeandalucia.es/educacion/gestionafp/datos/tareas/DAW/DWEC_62076324/2023-24/DAW_DWEC_5_2023-24_Individual__792173/Captura.PNG"
+                    alt="Tabla" style="display: block; margin-left: auto; margin-right: auto;" width="802"
+                    height="357"></span></p>
+        <p dir="ltr"><span style="font-size: 1em;">Por último, El HTML de la tabla debe estar vacío (salvo por el
+                encabezado), su estilo ser dado mediante CSS y </span><span style="font-size: 1em;">su contenido
+                añadirse mediante código JavaScript. Desde la función init(), se debe añadir al menos 4 filas a la
+                tabla&nbsp;</span><span style="font-size: 1em;">mediante JavaScript.</span></p>
+        <p dir="ltr"><span style="font-size: 1em;">Recomendaciones:</span></p>
+        <ul>
+            <li dir="ltr"><span style="font-size: 1em;">Crea una función <em>newRow(name,lastname,age)</em> que devuelva
+                    la estructura de nodos del DOM de la nueva fila. Una posible forma de enfocarlo es la siguiente (el
+                    coloreado del código dentro las comillas se realiza con la extensión: <a
+                        href="https://marketplace.visualstudio.com/items?itemName=Tobermory.es6-string-html"
+                        target="_blank" rel="noopener">es6-string-html - Visual Studio Marketplace</a>):</span><span
+                    style="font-size: 1em;"></span></li>
+        </ul>
+        <p><span style="font-size: 1em;"><img
+                    src="https://www.juntadeandalucia.es/educacion/gestionafp/datos/tareas/DAW/DWEC_62076324/2023-24/DAW_DWEC_5_2023-24_Individual__792173/img3.png"
+                    alt="" style="display: block; margin-left: auto; margin-right: auto;" width="574"
+                    height="282"></span></p>
+        <p><span style="font-size: 1em;"><img
+                    src="https://www.juntadeandalucia.es/educacion/gestionafp/datos/tareas/DAW/DWEC_62076324/2023-24/DAW_DWEC_5_2023-24_Individual__792173/img4.png"
+                    alt="" style="display: block; margin-left: auto; margin-right: auto;" width="615"
+                    height="121"></span></p>
+        <ul>
+            <li dir="ltr"><span style="font-size: 1em;">Se deben asociar los eventos a los nuevos nodos utilizando
+                    <em>addEventListener</em>().</span></li>
+        </ul>
+        <h4 class="resaltado_inline" style="text-align: left;">ACTIVIDAD 2. Investigación sobre React<strong></strong>
+        </h4>
+        <p dir="ltr">En esta actividad se va a realizar un pequeño trabajo de investigación guiado sobre el Framework de
+            desarrollo Web, <em>React</em>.</p>
+        <p dir="ltr"><strong>2.1.</strong> Primero responde a las siguientes preguntas en base a <a
+                href="https://es.react.dev/learn" target="_blank" rel="noopener">https://es.react.dev/learn</a> y <a
+                href="https://es.react.dev/blog/2023/03/16/introducing-react-dev" target="_blank"
+                rel="noopener">https://es.react.dev/blog/2023/03/16/introducing-react-dev</a></p>
+        <ul>
+            <li dir="ltr">¿Qué es React?&nbsp;¿Y React Native?</li>
+            <li dir="ltr">¿Qué es el DOM Virtual?</li>
+            <li dir="ltr">¿Qué es JSX? Realiza un ejemplo de código JSX y explícalo.</li>
+            <li dir="ltr">¿Qué es Babel?</li>
+            <li dir="ltr">¿Cuál es la sintaxis de la función <em>ReactDOM.render()</em>?</li>
+            <li dir="ltr">¿Qué es un componente? ¿Y un <em>props</em>? Pon un ejemplo y explícalo.</li>
+            <li dir="ltr">¿Cómo se referencia a un componente desde dentro de otro componente?</li>
+            <li dir="ltr">¿Para qué sirven los estados? ¿Y en que se diferencian de los <em>props</em>?</li>
+            <li dir="ltr">¿Qué es el ciclo de vida de un componente?</li>
+            <li dir="ltr">¿Cómo se asocian eventos?&nbsp;Pon un ejemplo y explícalo.</li>
+            <li dir="ltr">¿Para qué sirven las siguientes webs:&nbsp;&nbsp;https://mui.com/&nbsp;y
+                https://react-bootstrap.github.io/? ¿Puedes encontrar otra web que cumpla el mismo propósito?</li>
+            <li dir="ltr">¿Qué aportan los <em>hooks</em>? ¿Cómo se accede al estado local de un componente sin y con
+                <em>hooks</em>?</li>
+            <li dir="ltr">¿Qué tecnología se utiliza para guardar el estado general de la APP?</li>
+            <li dir="ltr">¿Qué tecnología se utiliza para que dependiendo de la URL se cargue un componente u otro?</li>
+        </ul>
+        <p><strong>2.2. </strong>Crear un proyecto local "HolaMundoReact" (instala mediante NPM los paquetes necesarios)
+            y crea una APP que diga "Hola Mundo React!".</p>
+        <p><strong>2.3. </strong>Implementa un componente Empleado que muestre en una línea su nombre y apellidos.
+            Expórtalo mediante un módulo. Posteriormente, desde el componente APP crea 5 empleados.</p>
+        <p><strong>2.4. </strong>Implemente un componente Botón con el siguiente comportamiento:</p>
+        <p><img src="https://www.juntadeandalucia.es/educacion/gestionafp/datos/tareas/DAW/DWEC_62076324/2023-24/DAW_DWEC_5_2023-24_Individual__792173/React1B.gif"
+                alt="" style="display: block; margin-left: auto; margin-right: auto;" width="462" height="106"></p>
+        <p><strong>2.5.</strong> Implemente un componente Botón con el siguiente comportamiento:</p>
+        <p><img src="https://www.juntadeandalucia.es/educacion/gestionafp/datos/tareas/DAW/DWEC_62076324/2023-24/DAW_DWEC_5_2023-24_Individual__792173/React2.gif"
+                alt="" style="display: block; margin-left: auto; margin-right: auto;" width="269" height="99"></p>
+        <p><strong>2.6. </strong>Modifica el ejercicio anterior añadiendo el uso de Redux para guardar el número de
+            <em>clicks </em>en la memoria global.</p>
+        <p><strong>2.7.&nbsp;</strong>Documenta el uso en un proyecto local de un componente React de alguna librería.
+        </p>
+        <h4 class="resaltado_inline" style="text-align: left;">&nbsp;ACTIVIDAD 3. Página Web de CV con React y
+            Router<br><strong></strong></h4>
+        <p>Crea una web de tu curriculum vitae (CV) haciendo uso de React y <a
+                href="https://react-bootstrap.netlify.app/" target="_blank" rel="noopener">React Boostrap</a> (u otra de
+            las librerías de componentes de React como <a href="https://mui.com/" target="_blank"
+                rel="noopener">MaterialUI</a>). <a href="https://cv.devweb.dev/" target="_blank" rel="noopener">Aquí
+                puedes ver un ejemplo</a>.</p>
+        <p>Esta debe tener varias páginas, todas compartiendo un <em>header</em> con un menú de navegación y un
+            <em>footer </em>(Componentes: &lt;MyHeader&gt; &lt;MyFooter&gt;). Estas deben ser las siguientes (para
+            utilizar varias páginas hay que utilizar <a href="https://v5.reactrouter.com/web/guides/quick-start"
+                target="_blank" rel="noopener">React Router</a>):</p>
+        <ul>
+            <li><strong>Página de aterrizaje </strong>(Componente: &lt;LandingPage&gt;)<strong>.</strong> Debe mostrar
+                tu nombre, una fotografía (puede ser la de tu perfil de moodle), tus perfiles (github, linkedin, etc.),
+                un par de frase describiéndote y dos o tres cualidades/habilidades que te gustaría destacar. Además, se
+                puede hacer que al hacer <em>scroll</em> hacia abajo vaya apareciendo más información que quieras
+                destacar o poner un enlace para descargar un PDF con tu CV.</li>
+            <li><img src="https://www.juntadeandalucia.es/educacion/gestionafp/datos/tareas/DAW/DWEC_62076324/2023-24/DAW_DWEC_5_2023-24_Individual__792173/bbb.png"
+                    alt="" width="387" height="271"
+                    style="display: block; margin-left: auto; margin-right: auto;"><strong>Página de proyectos</strong>
+                (Componente: &lt;PortafolioPage&gt;). Varias imágenes de proyectos realizados a lo largo del ciclo, con
+                título y breve descripción. Aquí suele ser adecuado poner enlaces a github.</li>
+        </ul>
+        <p><img src="https://www.juntadeandalucia.es/educacion/gestionafp/datos/tareas/DAW/DWEC_62076324/2023-24/DAW_DWEC_5_2023-24_Individual__792173/Captura_de_pantalla_2024-03-16_124911.png"
+                alt="Ejemplo página proyectos" width="423" height="203"
+                style="display: block; margin-left: auto; margin-right: auto;"></p>
+        <ul>
+            <li><strong>Página de experiencia académica y laboral</strong> (Componente: &lt;ExperiencePage&gt;).<img
+                    src="https://www.juntadeandalucia.es/educacion/gestionafp/datos/tareas/DAW/DWEC_62076324/2023-24/DAW_DWEC_5_2023-24_Individual__792173/aaa.png"
+                    alt="" width="391" height="329" style="display: block; margin-left: auto; margin-right: auto;"></li>
+            <li>Si se pone cualquier URL que sea diferente a las anteriores, debe reconducir directamente a la página de
+                aterrizaje.</li>
+        </ul>
+        <div class="iDevice_destacadofpd">
+            <p>Se puede modificar ligeramente la estructura de página (por ejemplo, poniendo los iconos de los perfiles
+                en el <em>header</em> o <em>footer</em>) para adaptarla a tus necesidades. Siempre que se mantenga el
+                próposito de la Web CV, esté hecha con React y haya al menos dos páginas diferentes.</p>
+        </div>
+        <h4 class="resaltado_inline" style="text-align: left;">&nbsp;ACTIVIDAD 4. Compatibilidad entre
+            navegadores<br><strong></strong></h4>
+        <p>Realiza un gif o un video mostrando el funcionamiento de la Web y sus contenidos interactivos en al menos dos
+            navegadores diferentes.</p>
+    </div>
+</body>
+
+</html>
