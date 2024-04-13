@@ -6,31 +6,62 @@ import { htmlToElement } from './services/htmlToElement.mjs';
 //     document.getElementById('main').appendChild(element);
 // }
 
-let namee = document.getElementById('name');
-let surname = document.getElementById('surname');
-let age = document.getElementById('age');
+const nameInput = document.getElementById('name').addEventListener('input', validationField);
+const surnameInput = document.getElementById('surname').addEventListener('input', validationField);
+const ageInput = document.getElementById('age').addEventListener('input', validationField);
+const fields = Array.from(document.querySelector('form').querySelectorAll('input'));
+const add = document.getElementById('add').addEventListener('click', addElement);
+const list = document.getElementById('list');
 
 window.onload = function () {
 
-    let add = document.getElementById('add');
-    let list = document.getElementById('list');
-    add.addEventListener('click', addElement);
+    //establecer todos los campos como invalidos por defecto
 
+
+}
+
+function validationField() {
+    if (this.value === '') {
+        this.setCustomValidity(`The ${this.name} cannot be empty.`);
+        this.classList.add('fieldError');
+    } else {
+        this.setCustomValidity('');
+        this.classList.remove('fieldError');
+    }
+    document.querySelector(`.${this.name}Error`).textContent = this.validationMessage;
+    allowAdd();
 }
 
 function addElement() {
-    createPerson();
 
+    const name = htmlToElement(`<td>${nameInput.value}</td>`);
+    const surname = htmlToElement(`<td>${surnameInput.value}</td>`);
+    const age = htmlToElement(`<td>${ageInput.value}</td>`);
+    const operation = htmlToElement(`<td></td>`).appendChild(createRemove());
+    const row = htmlToElement(`<tr></tr>`);
 
-    const element = htmlToElement(`<div>${person.name} ${person.surname} ${person.age}</div>`);
-    list.appendChild(element);
+    row.appendChild(name);
+    row.appendChild(surname);
+    row.appendChild(age);
+    row.appendChild(operation);
+    list.appendChild(row);
+
+    nameInput.value = '';
+    surnameInput.value = '';
+    ageInput.value = '';
 
 }
-function createPerson() {
-    const person = {
-        name: namee.value,
-        surname: surname.value,
-        age: age.value
-    }
-    return person;
+
+function createRemove() {
+    const remove = htmlToElement(`<span class="remove">❌</span>`);
+    remove.addEventListener('click', function () {
+        remove.parentElement.parentElement.remove();
+    });
+    return remove;
+}
+
+function allowAdd() {
+
+    fields.every((field) => field.validity.valid) ? add.disabled = false : add.disabled = true;
+
 }

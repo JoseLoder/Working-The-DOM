@@ -9,7 +9,7 @@ header {
     margin: 0 auto;
 }
 
-#form {
+form {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -24,4 +24,23 @@ footer {
     background-color: #333;
     padding: 20px;
     border-radius: 20px;
+}
+
+.remove {
+    text-align: center;
+    margin-right: 10px;
+}
+
+.remove:hover {
+    cursor: pointer;
+}
+
+.fieldError {
+    border: 1px solid red;
+}
+
+.error {
+    color: red;
+    font-size: 0.8em;
+    margin-bottom: 20px;
 }
