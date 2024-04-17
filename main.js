@@ -1,3 +1,5 @@
+
+console.log('main.js loaded');
 import { htmlToElement } from './services/htmlToElement.mjs';
 
 
@@ -140,9 +142,11 @@ function validationField() {
     if (this.value === '') {
         this.setCustomValidity(`The ${this.name} cannot be empty.`);
         this.classList.add('fieldError');
+        document.querySelector(`.${this.name}Error`).removeAttribute('hidden');
     } else {
         this.setCustomValidity('');
         this.classList.remove('fieldError');
+        document.querySelector(`.${this.name}Error`).setAttribute('hidden', true);
     }
     document.querySelector(`.${this.name}Error`).textContent = this.validationMessage;
     allowAdd();

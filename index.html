@@ -8,10 +8,8 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="main.css">
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/dark.css"> -->
 
 </head>
-
 
 <body>
     <main>
@@ -22,13 +20,13 @@
         <form>
             <label for="name">Name</label>
             <input type="text" id="name" name="name">
-            <span class="nameError error"></span>
+            <span class="nameError error" hidden></span>
             <label for="surname">Surname</label>
             <input type="text" id="surname" name="surname">
-            <span class="surnameError error"></span>
+            <span class="surnameError error" hidden></span>
             <label for="age">Age</label>
             <input type="number" id="age" name="age">
-            <span class="ageError error"></span>
+            <span class="ageError error" hidden></span>
             <button type="button" id="add" disabled>Add</button>
         </form>
         <table id="table">
